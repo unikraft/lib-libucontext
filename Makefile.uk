@@ -69,13 +69,13 @@ LIBUCONTEXT_CXXINCLUDES += -I$(LIBUCONTEXT_EXTRACTED)
 # Global flags
 ################################################################################
 # Suppress some warnings to make the build process look neater
-SUPPRESS_FLAGS += -Wno-unused-parameter \
+LIBUCONTEXT_SUPPRESS_FLAGS += -Wno-unused-parameter \
 	-Wno-unused-variable -Wno-unused-value -Wno-unused-function \
 	-Wno-missing-field-initializers -Wno-implicit-fallthrough
 
-LIBUCONTEXT_CFLAGS-y   += $(SUPPRESS_FLAGS) \
+LIBUCONTEXT_CFLAGS-y   += $(LIBUCONTEXT_SUPPRESS_FLAGS) \
  	-Wno-pointer-to-int-cast -Wno-int-to-pointer-cast
-LIBUCONTEXT_CXXFLAGS-y += $(SUPPRESS_FLAGS)
+LIBUCONTEXT_CXXFLAGS-y += $(LIBUCONTEXT_SUPPRESS_FLAGS)
 
 # Exported symbols
 LIBUCONTEXT_EXPORTS = $(LIBUCONTEXT_BASE)/exportsyms.uk
