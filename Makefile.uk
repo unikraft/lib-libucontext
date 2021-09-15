@@ -43,7 +43,7 @@ $(eval $(call addlib_s,libucontext,$(CONFIG_LIBUCONTEXT)))
 # Original sources
 ################################################################################
 LIBUCONTEXT_VERSION=0.9.0
-LIBUCONTEXT_URL=https://github.com/AdelieLinux/libucontext/archive/v$(LIBUCONTEXT_VERSION).zip
+LIBUCONTEXT_URL=http://distfiles.adelielinux.org/source/libucontext/libucontext-$(LIBUCONTEXT_VERSION).tar.xz
 LIBUCONTEXT_PATCHDIR=$(LIBUCONTEXT_BASE)/patches
 LIBUCONTEXT_SUBDIR=libucontext-$(LIBUCONTEXT_VERSION)
 $(eval $(call fetch,libucontext,$(LIBUCONTEXT_URL)))
