@@ -1,0 +1,4 @@
+name        := "libucontext"
+description := "A library which provides the <ucontext.h> API from older POSIX revisions."
+license     := "MIT"
+version     := 0.9.0 sha256:0d53a415a307ef175153bbe60a572c940a922cb736ce13530b666e7ec2795d68 http://distfiles.adelielinux.org/source/libucontext/libucontext-0.9.0.tar.xz
